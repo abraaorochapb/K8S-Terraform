@@ -12,7 +12,7 @@ no diretório que criou o arquivo yaml com os values:
 ```helm install goldilocks --namespace goldilocks -- create-namespace fairwinds.com/stable -f seu-arquivo.yaml```
 
 Para monitorar as namespaces:                                                    
-```kubectl label namespace sua-namespace goldilocks.fairwinds.com```
+```kubectl label namespace sua-namespace goldilocks.fairwinds.com/enabled=true```
 
 Port forward para visualização do dashboard
 ```kubectl -n goldilocks port-forward svc/goldilocks-dashboard 8080:80```
