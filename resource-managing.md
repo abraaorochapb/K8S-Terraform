@@ -1,4 +1,4 @@
-Utilizaremos o Goldilocks para gerenciar o quanto de recurso iremos utilizar nas nossas aplicações, segue o guia:
+Utilizando o Goldilocks para gerenciar o quanto de recurso iremos disponibilizar nas nossas aplicações, segue o guia:
 
 Obs.: Necessário ter o Helm instalado
 
@@ -10,3 +10,11 @@ adiciona o repo:
 
 no diretório que criou o arquivo yaml com os values:                    
 ```helm install goldilocks --namespace goldilocks -- create-namespace fairwinds.com/stable -f seu-arquivo.yaml```
+
+Para monitorar as namespaces:                                                    
+```kubectl label namespace sua-namespace goldilocks.fairwinds.com```
+
+Port forward para visualização do dashboard
+```kubectl -n goldilocks port-forward svc/goldilocks-dashboard 8080:80```
+
+Agora é só acessar http://localhost:8080/
