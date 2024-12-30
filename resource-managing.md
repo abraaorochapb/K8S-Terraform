@@ -1,4 +1,4 @@
-Utilizando o Goldilocks para gerenciar o quanto de recurso iremos disponibilizar nas nossas aplicações, segue o guia:
+Utilizando o Goldilocks para gerenciar o quanto de recurso iremos disponibilizar nas nossas aplicações em ambientes Kubernetes, segue o guia:
 
 Obs.: Necessário ter o Helm instalado
 
